@@ -1,5 +1,4 @@
 const Responder = require('../models/Responder');
-const Emergency = require('../models/Emergency');
 const logger = require('../utils/logger');
 
 exports.registerResponder = async (req, res) => {

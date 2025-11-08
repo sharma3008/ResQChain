@@ -11,7 +11,7 @@ class BlockchainService {
   async connect() {
     try {
       const rpcUrl = process.env.BLOCKCHAIN_RPC_URL || 'http://localhost:8545';
-      this.web3 = new Web3(new Web3.providers.HttpProvider(rpcUrl));
+      this.web3 = new Web3(rpcUrl);
       
       // Get accounts
       const accounts = await this.web3.eth.getAccounts();

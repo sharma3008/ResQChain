@@ -37,8 +37,7 @@ class AIPredictionService {
         symptoms = [],
         vitals = {},
         age = 30,
-        medicalHistory = [],
-        currentMedication = []
+        medicalHistory = []
       } = patientData;
 
       let severityScore = 0;
